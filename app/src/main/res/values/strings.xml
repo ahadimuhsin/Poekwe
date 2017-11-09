@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Poekwe</string>
+    <string name="nama_rumah_makan">Sheringga</string>
+    <string name="alamat">Jalan Awan VII Ngoresan, Jebres, Surakarta</string>
+    <string name="menu_menu">- Tempe\n
+    - Tahu\n
+    - Ayam Penyet\n
+    - Aneka Sayur\n
+    - Ayam Goreng\n
+    - Sosis\n
+    - Telur\n
+    - Ikan\n
+    - Teh \n
+    - Kopi \n
+    - Jus
+    </string>
+    <string name="harga">Harga berkisar antara Rp 4000 - Rp 12000
+    </string>
+</resources>
