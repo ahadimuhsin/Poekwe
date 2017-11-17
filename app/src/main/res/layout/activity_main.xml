@@ -18,6 +18,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/ic_launcher_background" />
+       <TextureView
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:textSize="20dp"
+           android:text="Coba Coba"/>
     </GridLayout>
 </ScrollView>
 
