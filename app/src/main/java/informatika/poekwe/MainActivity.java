@@ -1,10 +1,12 @@
 package informatika.poekwe;
 
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -42,13 +44,21 @@ public class MainActivity extends AppCompatActivity {
         recyclerview.setAdapter(adapter);
 
         recyclerview.addOnScrollListener(new RecyclerView.OnScrollListener() {
-            @Override
-            public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
-                if(gridLayoutManager.findLastCompletelyVisibleItemPosition()==list_data.size()-1){
-                    load_data_from_server(list_data.get(list_data.size()-1).getId_warung());
-                }
-            }
+            //Buat Scroll tak terbatas
+//            @Override
+//            public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
+//                if(gridLayoutManager.findLastCompletelyVisibleItemPosition()==list_data.size()-1){
+//                    load_data_from_server(list_data.get(list_data.size()-1).getId_warung());
+//                }
+//            }
         });
+    }
+
+
+    public void SeeDetail(View view){
+        Intent intent = new Intent(this, InfoActivity.class);
+        startActivity(intent);
+
     }
 
     private void load_data_from_server(final int id) {

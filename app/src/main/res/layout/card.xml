@@ -9,7 +9,7 @@
     <android.support.v7.widget.CardView
         android:id="@+id/card_view"
         android:layout_height="match_parent"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_gravity="center"
         android:elevation="3dp"
         android:background="@android:color/white"
@@ -22,7 +22,7 @@
             android:layout_height="match_parent">
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="200dp"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:clickable="true"
                 android:scaleType="centerCrop"
@@ -60,6 +60,7 @@
                 android:text="Lihat"
                 android:textSize="12sp"
                 android:layout_below="@id/text_alamat"
+                android:onClick="SeeDetail"
                 />
         </RelativeLayout>
     </android.support.v7.widget.CardView>

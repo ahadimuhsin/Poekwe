@@ -1,6 +1,7 @@
 package informatika.poekwe;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -34,7 +35,7 @@ class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder>{
     }
 
     @Override
-    public void onBindViewHolder(ViewHolder holder, int position) {
+    public void onBindViewHolder(ViewHolder holder, int position) { //menampilkan data
         holder.nama.setText(my_data.get(position).getNama());
         holder.alamat.setText(my_data.get(position).getAlamat());
         Glide.with(context).load(my_data.get(position).getgambar()).into(holder.image);
@@ -43,8 +44,11 @@ class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder>{
 
     @Override
     public int getItemCount() {
+
         return my_data.size();
     }
+
+
 
     public class ViewHolder extends RecyclerView.ViewHolder{
         public ImageView image;

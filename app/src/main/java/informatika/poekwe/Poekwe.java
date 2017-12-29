@@ -28,14 +28,17 @@ public class Poekwe {
     }
 
     public int getId_warung() {
+
         return id_warung;
     }
 
     public void setId_warung(int id_warung) {
+
         this.id_warung = id_warung;
     }
 
     public String getNama() {
+
         return nama;
     }
 
@@ -44,18 +47,22 @@ public class Poekwe {
     }
 
     public String getLongitude() {
+
         return longitude;
     }
 
     public void setLongitude(String longitude) {
+
         this.longitude = longitude;
     }
 
     public String getLatitude() {
+
         return latitude;
     }
 
     public void setLatitude(String latitude) {
+
         this.latitude = latitude;
     }
 
@@ -65,14 +72,17 @@ public class Poekwe {
     }
 
     public void setAlamat(String alamat) {
+
         this.alamat = alamat;
     }
 
     public String getgambar() {
+
         return gambar;
     }
 
     public void gambar(String gambar) {
+
         this.gambar = gambar;
     }
 }
